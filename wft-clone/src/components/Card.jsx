@@ -1,10 +1,10 @@
 export default function Card (props){
   
     return(
-        <div className="mt-5 w-[680px] mx-auto px-4 pt-6 rounded shadow-md bg-[#575757] shadow-neutral-800/70">
-            <section className="border-b-4 border-grey-200 flex items-baseline justify-between">
-                <h3 className="pb-2 border-b-4 border-pink-300 text-3xl relative top-1">{props.header}</h3>
-            {props.viewLink ? <span className="text-xl text-pink-300">View</span> : ""}
+        <div className="mb-2 max-w-[680px] w-5/12 mx-auto px-4 pt-6 rounded shadow-lg bg-white dark:bg-[#201d1d] shadow-neutral-400/70 dark:shadow-neutral-950/70">
+            <section className="border-b-4 dark:border-neutral-600 flex items-baseline justify-between">
+                <h3 className="pb-2 border-b-4 border-[#d2559b] text-2xl relative top-1">{props.header}</h3>
+            {props.viewLink ? <span className="text-l font-bold text-[#d2559b]">View</span> : ""}
             </section>
             <section className="flex pt-5">
                 {props.child}
